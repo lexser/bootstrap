@@ -330,11 +330,13 @@
   }
 
   Tooltip.prototype.tip = function () {
-    return this.$tip = this.$tip || $(this.options.template)
+    var ret = this.$tip = this.$tip || $(this.options.template)
+    return ret
   }
 
   Tooltip.prototype.arrow = function () {
-    return this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow')
+    var ret = this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow')
+    return ret
   }
 
   Tooltip.prototype.validate = function () {

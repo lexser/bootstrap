@@ -70,7 +70,8 @@
   }
 
   Popover.prototype.arrow = function () {
-    return this.$arrow = this.$arrow || this.tip().find('.arrow')
+    var ret = this.$arrow = this.$arrow || this.tip().find('.arrow')
+    return ret
   }
 
   Popover.prototype.tip = function () {
